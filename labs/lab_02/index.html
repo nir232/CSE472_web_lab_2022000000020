@@ -4,9 +4,158 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Web Development Workshop</title>
 </head>
 <body>
-    <h1>Nirob</h1>
+
+    <header>
+        <h1>CSE Web Development Workshop.</h1>
+        <p>A beginner friendly lab workshop for HTML and webpage Development</p>
+    </header>
+    <nav>
+
+        <a href="#about">About</a>
+        <a href="#topics">Topics</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#register">Register</a>
+    </nav>
+
+    <main>
+
+        <section id="about">
+            <div>
+                <h1>About the workshop</h1>
+                <p>This lab is for those students who want to understand how HTML works in real webpage</p>
+                <p>The <span style="font-weight: bold; color:orangered">main goal</span> is to help student build correct and structured webpage</p>
+            </div>
+            <div>
+                <h3>Workshop Venue</h3>
+                <p>Department of CSE Lab.</p>
+                <a href="http://www.seu.edu.bd" target="blank">Visit University Website</a>
+
+            </div>
+
+            <div>
+                <h3>Workshop Banner</h3>
+                <img src="" alt="">
+            </div>
+
+
+        </section>
+
+        <section id="topics">
+            <h2>Topics Covered</h2>
+            <h3>Core Topics</h3>
+            <ul>
+                <li>HTML Document Structure</li>
+                <li>Images, links and Text</li>
+                <li>List, tables and forms</li>
+            </ul>
+            <h3>Learning Sequence</h3>
+            <ol>
+                <li>Understand page structure</li>
+                <li>Create Contents sections</li>
+                <li>Build and display table</li>
+                <li>Create form and take input from user</li>
+            </ol>
+
+            <h3>Detailed Plan</h3>
+            <ul>
+                <li>
+                    Week 1
+                    <ol>
+                        <li>HTML Skeleton</li>
+                        <li>Headings and Paragraph</li>
+                    </ol>
+                </li>
+                <li>
+                    Week 2
+                    <ul>
+                        <li>Lists</li>
+                        <li>Tables</li>
+                        <li>Forms</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section id="schedule">
+            <h2>Workshop Schedule</h2>
+            <table border="1">
+                
+                <thead>
+                     <tr>
+                        <th>Day</th>
+                        <th>Time</th>
+                        <th>Topic</th>
+                     </tr>
+                </thead>
+
+                <tbody>
+                     <tr>
+                        <td>Sunday</td>
+                        <td>10:00 AM - 12:00 PM</td>\
+                        <td>HTML Basics</td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>10:00 AM - 12:00 PM</td>
+                        <td>Tables and Lists</td>
+                    </tr>
+
+                    <tr>
+                        <td>Thursday</td>
+                        <td>10:00 AM - 12:00 PM</td>
+                        <td>Forms and Semantic HTML</td>
+                    </tr>
+                </tbody>
+                
+            </table>
+        </section>
+
+        <section id="register">
+            <h2>Registration Form</h2>
+            <form>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter Your Full Name"><br><br>
+
+                <label for="studentId">Student Id:</label>
+                <input type="text" id="studentId" name="studentId" placeholder="Enter Your Id"><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your Email"><br><br>
+
+                <label for="date">Preferred Date:</label>
+                <input type="date" name="date" id="date"><br><br>
+
+                <p>Select Shift:</p>
+
+                <input type="radio" id="morning" name="shift" value="morning">
+                <label for="morning">Morning</label>
+
+                <input type="radio" id="afternoon" name="shift" value="afternoon">
+                <label for="afternoon">Afternoon</label>
+
+                <p>Skills already known:</p>
+
+                <input type="checkbox" id="html" name="known_html" value="html">
+                <label for="html">HTML</label>
+
+                <input type="checkbox" id="css" name="known_css" value="css">
+                <label for="css">CSS</label>
+
+                <input type="checkbox" id="js" name="known_js" value="js">
+                <label for="js">JavaScript</label>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Contact: cse.lab@seu.edu.bd</p>
+        <p>Prepared for CSE472 lab practice</p>
+    </footer>
+    
 </body>
 </html>
